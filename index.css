@@ -39,3 +39,7 @@ input#length {
 button.btn {
     margin-bottom: 30px;
 }
+
+.bigFont {
+    font-size: 23pt;
+}
