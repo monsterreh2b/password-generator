@@ -1,0 +1,53 @@
+I
+
+generate click
+password length
+
+M
+
+id="displayPassword"
+
+
+M
+M
+
+L
+
+create symbols array (20 items) with loop
+create numbers array (20 items) with loop
+create combo array (20 items) with loop
+
+S
+
+symbols
+numbers
+
+
+
+
+
+
+on generate click 
+
+
+
+if only symbols is checked,
+
+--use charactersWithSymbolsOnly array only
+--loop over with  array of length = password length of charactersWithSymbolsOnly
+-- do plus equals 
+put in passwordDisplay
+
+if numbers only is checked
+
+--use charactersWithSymbolsOnlyonly
+--loop over with array of length = password length of charactersWithSymbolsOnly
+-- do plus equals 
+put in passwordDisplay
+
+if symbols is checked AND numbers is checked,
+
+--use characters array only
+--loop over with array of length = password length of characters
+-- do plus equals
+put in passwordDisplay 

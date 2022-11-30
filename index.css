@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+
+div#displayPassword {
+    
+   
+    font-size: 20pt;
+}
+
+hr {
+    width: 80%;
+   
+}
+
+.griddy-center {
+    display: grid;
+    place-items: center;
+    min-height: 50vh;
+}
+
+.flexy {
+    display: flex;
+    flex-direction: row;
+}
+
+input#length {
+    outline: 0;
+    border-width: 0px 0 1px;
+    border-color: black;
+    position: relative;
+    top: 20px;
+    background-color: #fff;
+    height: 31px;
+    padding: 3px 7px;
+    line-height: normal;
+}
+
+button.btn {
+    margin-bottom: 30px;
+}
