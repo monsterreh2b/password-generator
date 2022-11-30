@@ -58,7 +58,7 @@ function generatePassword(number) {
             symbolsTemp += charactersWithSymbolsOnly[getRandomNumber(59)];
         }
         console.log(symbolsTemp);
-        displayPassword.innerHTML = symbolsTemp;
+        displayPassword.value = symbolsTemp;
     }
     //numbers only checked
     else if (symbols.checked === false && numbers.checked === true) {
@@ -67,7 +67,7 @@ function generatePassword(number) {
             numbersTemp += charactersWithNumbersOnly[getRandomNumber(61)];
         }
         console.log(numbersTemp);
-        displayPassword.innerHTML = numbersTemp;
+        displayPassword.value = numbersTemp;
     }
     else if (symbols.checked === true && numbers.checked === true) {
         let comboTemp = "";
@@ -75,7 +75,7 @@ function generatePassword(number) {
             comboTemp += characters[getRandomNumber(70)];
         }
         console.log(comboTemp);
-        displayPassword.innerHTML = comboTemp;
+        displayPassword.value = comboTemp;
     }
 }
 
@@ -90,8 +90,7 @@ function clipBoard() {
     // Copy the text inside the text field
     navigator.clipboard.writeText(copyText.value);
 
-    // Alert the copied text
-    alert("Copied the text: " + copyText.value);
+   
 } 
 
 
