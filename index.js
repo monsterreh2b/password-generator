@@ -4,6 +4,8 @@ let form = document.querySelector(".password-form");
 console.log(form);
 let lengthTemp = document.getElementById("length");
 console.log(lengthTemp);
+let copyBtn = document.getElementById("copyBtn");
+console.log(copyBtn);
 
 
 let displayPassword = document.getElementById("displayPassword");
@@ -77,6 +79,21 @@ function generatePassword(number) {
     }
 }
 
+function clipBoard() {
+    // Get the text field
+    var copyText = document.getElementById("displayPassword");
+
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+
+    // Alert the copied text
+    alert("Copied the text: " + copyText.value);
+} 
+
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -104,6 +121,8 @@ form.addEventListener("submit", function (e) {
 
 
 });
+
+copyBtn.onclick = clipBoard;
 
 
 
