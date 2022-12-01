@@ -43,3 +43,16 @@ button.btn {
 .bigFont {
     font-size: 23pt;
 }
+
+input[type="checkbox"] {
+    zoom: 2;
+    margin-left: 10px;
+    position: relative;
+    bottom: 3px;
+}
+
+input#length {
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
